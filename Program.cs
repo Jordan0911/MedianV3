@@ -67,22 +67,27 @@ namespace MedianV3
         }
         static bool Perfect(int number)
         {
-            bool perfection=false;
             int sum = 0;    
-                for (int i = 0; i <= number; i++)
+                for (int i = 1; i <= number; i++)
                 {
                     if (number % i == 0)
                     {
                         sum = sum + i;
                     }
                 }
-                    if(sum== number)
-                    {
-                        perfection = true;
-                    }
+            if (sum == number)
+            {
+                return true;
+            }
+            else
+            {
+                return false;   
+            }
+
         }
         static void Main(string[] args)
         {
+            int Pcounter = 0;
             string function;
             Console.WriteLine("choose the function you want to use: factorial,interval,cypher counter, interval checker or Pchecker");
             function = Console.ReadLine();
@@ -117,9 +122,16 @@ namespace MedianV3
             }
             else if (function == "Pnumber")
             {
-                Console.WriteLine("insert value");
+                Console.WriteLine("insert interval");
                 int v1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(Perfect(v1)); 
+                    for (int i=0; i<= v1; i++)
+                    {
+                        if ((Perfect(i))==true)
+                        {
+                        Pcounter++;
+                        } 
+                    }
+                Console.WriteLine("there were " + Pcounter + " perfect numbers");
             }
             else 
             {
