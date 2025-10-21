@@ -75,8 +75,6 @@ namespace MedianV3
                     {
                         sum = sum + i;
                     }
-               
-                
                 }
                     if(sum== number)
                     {
