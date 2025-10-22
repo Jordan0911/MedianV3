@@ -107,8 +107,13 @@ namespace MedianV3
             {
 for(int x=0;x<=10;x++){
                 
-                if((factorial(v1));
+        int factorial=((factorial(x));
+if(Even(factorial))=true{
+EvenFcounter=+factorial
+
 }
+}
+Console.WriteLine(EvenFcounter);
             }
 
             else if (function == "counter")
