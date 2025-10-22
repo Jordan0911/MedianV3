@@ -85,11 +85,12 @@ namespace MedianV3
             }
 
         }
-   static bool Even(number)
-   {
-      if(number%2==0){
-      return true;
-    }
+       static bool Even(number)
+       {
+          if(number%2==0){
+          return true;
+          }
+        }
         static void Main(string[] args)
         {
             int Pcounter = 0,evenFcounter=0;
@@ -105,14 +106,13 @@ namespace MedianV3
             }
             else if (function == "factorial")
             {
-for(int x=0;x<=10;x++){
-                
-        int factorial=((factorial(x));
-if(Even(factorial))=true{
-EvenFcounter=+factorial
-
-}
-}
+                for(int x=0;x<=10;x++;){
+                    int factorial=((factorial(x));
+                        if(Even(factorial))=true
+                        {
+                            EvenFcounter=+factorial;
+                        }
+                    }
 Console.WriteLine(EvenFcounter);
             }
 
