@@ -1,4 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
+using System.Reflection.Metadata.Ecma335;
 
 namespace MedianV3
 {
@@ -85,9 +85,14 @@ namespace MedianV3
             }
 
         }
+   static bool Even(number)
+   {
+      if(number%2==0){
+      return true;
+    }
         static void Main(string[] args)
         {
-            int Pcounter = 0;
+            int Pcounter = 0,evenFcounter=0;
             string function;
             Console.WriteLine("choose the function you want to use: factorial,interval,cypher counter, interval checker or Pchecker");
             function = Console.ReadLine();
@@ -100,10 +105,12 @@ namespace MedianV3
             }
             else if (function == "factorial")
             {
-                Console.WriteLine("insert the value you want the factorial of");
-                int v1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(factorial(v1));
+for(int x=0;x<=10;x++){
+                
+                if((factorial(v1));
+}
             }
+
             else if (function == "counter")
             {
                 Console.WriteLine("insert value");
