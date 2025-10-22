@@ -107,10 +107,10 @@ namespace MedianV3
             else if (function == "factorial")
             {
                 for(int x=0;x<=10;x++;){
-                    int factorial=((factorial(x));
+                    int facctorial=((factorial(x));
                         if(Even(factorial))=true
                         {
-                            EvenFcounter=+factorial;
+                            EvenFcounter=+facctorial;
                         }
                     }
 Console.WriteLine(EvenFcounter);
